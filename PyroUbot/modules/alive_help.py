@@ -19,8 +19,8 @@ from pyrogram.types import *
 from PyroUbot import *
 
 
-@PY.UBOT("alive")
-@PY.TOP_CMD
+@WANN.UBOT("alive")
+@WANN.TOP_CMD
 async def _(client, message):
     try:
         x = await client.get_inline_bot_results(
@@ -33,7 +33,7 @@ async def _(client, message):
 
 
 
-@PY.INLINE("^alive")
+@WANN.INLINE("^alive")
 async def _(client, inline_query):
     get_id = inline_query.query.split()
     for my in ubot._ubot:
@@ -83,7 +83,7 @@ async def _(client, inline_query):
             )
 
 
-@PY.CALLBACK("alv_cls")
+@WANN.CALLBACK("alv_cls")
 async def _(client, callback_query):
     get_id = callback_query.data.split()
     if not callback_query.from_user.id == int(get_id[2]):
@@ -96,19 +96,19 @@ async def _(client, callback_query):
             )
 
 
-@PY.BOT("anu")
-@PY.ADMIN
+@WANN.BOT("anu")
+@WANN.ADMIN
 async def _(client, message):
     buttons = BTN.BOT_HELP(message)
     sh = await message.reply("help menu information", reply_markup=InlineKeyboardMarkup(buttons))
     
 
-@PY.CALLBACK("balik")
+@WANN.CALLBACK("balik")
 async def _(client, callback_query):
     buttons = BTN.BOT_HELP(callback_query)
     sh = await callback_query.message.edit("help menu information", reply_markup=InlineKeyboardMarkup(buttons))
 
-@PY.CALLBACK("reboot")
+@WANN.CALLBACK("reboot")
 async def _(client, callback_query):
     user_id = callback_query.from_user.id
     if user_id not in await get_list_from_vars(client.me.id, "ADMIN_USERS"):
@@ -116,7 +116,7 @@ async def _(client, callback_query):
     await callback_query.answer("system berhasil di restart", True)
     subprocess.call(["bash", "start.sh"])
 
-@PY.CALLBACK("update")
+@WANN.CALLBACK("update")
 async def _(client, callback_query):
     out = subprocess.check_output(["git", "pull"]).decode("UTF-8")
     user_id = callback_query.from_user.id
@@ -129,7 +129,7 @@ async def _(client, callback_query):
     os.execl(sys.executable, sys.executable, "-m", "PyroUbot")
 
 
-@PY.UBOT("help")
+@WANN.UBOT("help")
 async def user_help(client, message):
     if not get_arg(message):
         try:
@@ -152,7 +152,7 @@ async def user_help(client, message):
                 f"<b>❌ No module found <code>{module}</code></b>"
             )
 
-@PY.INLINE("^user_help")
+@WANN.INLINE("^user_help")
 async def user_help_inline(client, inline_query):
     SH = await ubot.get_prefix(inline_query.from_user.id)
     msg = f"<blockquote>🪙 ᴍᴇɴᴜ ɪɴʟɪɴᴇ <a href=tg://user?id={inline_query.from_user.id}>{inline_query.from_user.first_name} {inline_query.from_user.last_name or ''}</a>\n★ ᴛᴏᴛᴀʟ ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}\n  ᴘʀᴇꜰɪx: {' '.join(SH)}</b></blockquote>"
@@ -163,7 +163,7 @@ async def user_help_inline(client, inline_query):
     )]
     await client.answer_inline_query(inline_query.id, cache_time=60, results=results)
 
-@PY.CALLBACK("^close_user")
+@WANN.CALLBACK("^close_user")
 async def close_usernya(client, callback_query):
     unPacked = unpackInlineMessage(callback_query.inline_message_id)
     for x in ubot._ubot:
@@ -172,7 +172,7 @@ async def close_usernya(client, callback_query):
                 unPacked.chat_id, unPacked.message_id
             )
 
-@PY.CALLBACK("help_(.*?)")
+@WANN.CALLBACK("help_(.*?)")
 async def help_callback(client, callback_query):
     mod_match = re.match(r"help_module\((.+?)\)", callback_query.data)
     prev_match = re.match(r"help_prev\((.+?)\)", callback_query.data)
