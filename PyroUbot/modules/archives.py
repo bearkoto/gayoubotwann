@@ -10,8 +10,8 @@ perintah : <code>{0}arch</code>
 perintah : <code>{0}unarch</code>
     mmengunarchivekan group chat pribadi maupun channel</b></blockquote>
 """
-@PY.UBOT("arch")
-@PY.TOP_CMD
+@WANN.UBOT("arch")
+@WANN.TOP_CMD
 async def archive_user(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -26,8 +26,8 @@ async def archive_user(client, message):
     
     await anjai.edit(f"<b>{brhsl}berhasil mengarchivekan semua {anjir}</b>")
 
-@PY.UBOT("unarch")
-@PY.TOP_CMD
+@WANN.UBOT("unarch")
+@WANN.TOP_CMD
 async def unarchive_user(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
