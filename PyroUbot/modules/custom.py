@@ -24,8 +24,8 @@ def extract_emojis_from_entities(message):
         emojis.append(emoji)
     return emojis
 
-@PY.UBOT("text")
-@PY.TOP_CMD
+@WANN.UBOT("text")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -61,7 +61,7 @@ async def _(client, message):
     except Exception as error:
         await msg.edit(str(error))
 
-@PY.UBOT("lihatemoji")
+@WANN.UBOT("lihatemoji")
 async def extract_emoji(client, message):
     try:
         if not message.reply_to_message:
