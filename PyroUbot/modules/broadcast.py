@@ -91,8 +91,8 @@ async def limit_cmd(client, message):
 
 gcast_progress = []
 
-@PY.UBOT("bc|gikes")
-@PY.TOP_CMD
+@WANN.UBOT("bc|gikes")
+@WANN.TOP_CMD
 async def gcast_handler(client, message):
     global gcast_progress
     gcast_progress.append(client.me.id)
@@ -152,8 +152,8 @@ async def gcast_handler(client, message):
 """
     return await message.reply(_gcs)
 
-@PY.UBOT("stopg")
-@PY.TOP_CMD
+@WANN.UBOT("stopg")
+@WANN.TOP_CMD
 async def stopg_handler(client, message):
     sks = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -164,8 +164,8 @@ async def stopg_handler(client, message):
     else:
         return await message.reply(f"<blockquote><b>{ggl}ᴛɪᴅᴀᴋ ᴀᴅᴀ ɢᴄᴀsᴛ !!!</b></blockquote>")
 
-@PY.UBOT("bcfd|cfd")
-@PY.TOP_CMD
+@WANN.UBOT("bcfd|cfd")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -218,8 +218,8 @@ async def _(client, message):
     return await message.reply(_gcs)
 
 
-@PY.BOT("broadcast")
-@PY.ADMIN
+@WANN.BOT("broadcast")
+@WANN.ADMIN
 async def _(client, message):
     msg = await message.reply("proceꜱꜱing...", quote=True)
 
@@ -249,9 +249,9 @@ async def _(client, message):
     return await msg.edit(f"Pesan broadcast berhasil terkirim ke {done} user")
 
 
-@PY.UBOT("addbl")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("addbl")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
@@ -277,9 +277,9 @@ async def _(client, message):
         return await msg.edit(str(error))
 
 
-@PY.UBOT("unbl")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("unbl")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BL_GROUP(client)
@@ -305,8 +305,8 @@ async def _(client, message):
         return await msg.edit(str(error))
 
 
-@PY.UBOT("listbl")
-@PY.TOP_CMD
+@WANN.UBOT("listbl")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -330,8 +330,8 @@ async def _(client, message):
     return await mzg.edit(list)
 
 
-@PY.UBOT("rallbl")
-@PY.TOP_CMD
+@WANN.UBOT("rallbl")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
@@ -350,8 +350,8 @@ async def _(client, message):
     await msg.edit(f"{brhsl}ꜱemua blackliꜱt broadcaꜱt berhaꜱil di hapuꜱ")
 
 
-@PY.UBOT("sends")
-@PY.TOP_CMD
+@WANN.UBOT("sends")
+@WANN.TOP_CMD
 async def _(client, message):
     if message.reply_to_message:
         chat_id = (
@@ -389,7 +389,7 @@ async def _(client, message):
             return await message.reply(f"{t}")
 
 
-@PY.INLINE("^get_send")
+@WANN.INLINE("^get_send")
 async def _(client, inline_query):
     _id = int(inline_query.query.split()[1])
     m = next((obj for obj in get_objects() if id(obj) == _id), None)
@@ -413,8 +413,8 @@ AG = []
 LT = []
 
 
-@PY.UBOT("autobc")
-@PY.TOP_CMD
+@WANN.UBOT("autobc")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
