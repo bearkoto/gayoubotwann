@@ -147,14 +147,14 @@ async def vsong_cmd(client, message):
         if files and os.path.exists(files):
             os.remove(files)
 
-@PY.UBOT("vsong")
-@PY.TOP_CMD
+@WANN.UBOT("vsong")
+@WANN.TOP_CMD
 async def _(client, message):
     await vsong_cmd(client, message)
 
 
-@PY.UBOT("song")
-@PY.TOP_CMD
+@WANN.UBOT("song")
+@WANN.TOP_CMD
 async def song_cmd(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
