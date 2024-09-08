@@ -12,7 +12,7 @@ __HELP__ = """
    <i>penjelasan:</b> untuk stalking instagram menggunakan username</i></blockquote>
 """
 
-@PY.UBOT("stalkig")
+@WANN.UBOT("stalkig")
 async def stalkig(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
