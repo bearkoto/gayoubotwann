@@ -21,8 +21,8 @@ perintah : <code>{0}delabsen</code>
 """
 
 
-@PY.UBOT("absen")
-@PY.TOP_CMD
+@WANN.UBOT("absen")
+@WANN.TOP_CMD
 async def absen_command(c, m):
     ggl = await EMO.GAGAL(c)
     sks = await EMO.BERHASIL(c)
@@ -44,8 +44,8 @@ async def absen_command(c, m):
     except Exception as e:
         await m.reply(f"<blockquote><b>{ggl}terjadi kesalahan: {e}</b></blockquote>")
 
-@PY.UBOT("delabsen")
-@PY.TOP_CMD
+@WANN.UBOT("delabsen")
+@WANN.TOP_CMD
 async def clear_absen_command(c, m):
     hadir_list.clear()
     ggl = await EMO.GAGAL(c)
@@ -54,7 +54,7 @@ async def clear_absen_command(c, m):
     await m.reply(f"<blockquote><b>{sks}semua absen berhasil dihapus</b></blockquote>")
 
 
-@PY.INLINE("^absen_in")
+@WANN.INLINE("^absen_in")
 async def absen_query(c, iq):
     user_id = iq.from_user.id
     mention = iq.from_user.mention
@@ -80,7 +80,7 @@ async def absen_query(c, iq):
         ],
     )
 
-@PY.CALLBACK("absen_hadir")
+@WANN.CALLBACK("absen_hadir")
 async def hadir_callback(c, cq):
     user_id = cq.from_user.id
     mention = cq.from_user.mention
