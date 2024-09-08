@@ -17,16 +17,16 @@ perintah : <code>{0}purgeme</code>
 """
 
 
-@PY.UBOT("del")
-@PY.TOP_CMD
+@WANN.UBOT("del")
+@WANN.TOP_CMD
 async def _(client, message):
     rep = message.reply_to_message
     await message.delete()
     await rep.delete()
 
 
-@PY.UBOT("purgeme")
-@PY.TOP_CMD
+@WANN.UBOT("purgeme")
+@WANN.TOP_CMD
 async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -65,8 +65,8 @@ async def _(client, message):
         await mmk.delete()
 
 
-@PY.UBOT("purge")
-@PY.TOP_CMD
+@WANN.UBOT("purge")
+@WANN.TOP_CMD
 async def _(client, message):
     ggl = await EMO.GAGAL(client)
     await message.delete()
