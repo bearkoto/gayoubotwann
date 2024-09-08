@@ -17,8 +17,8 @@ perintah : <code>{0}cowok</code>
 """
 
 
-@PY.UBOT("asupan")
-@PY.TOP_CMD
+@WANN.UBOT("asupan")
+@WANN.TOP_CMD
 async def video_asupan(client, message):
     prs = await EMO.PROSES(client)
     y = await message.reply_text(f"{prs}mencari video asupan...")
@@ -35,8 +35,8 @@ async def video_asupan(client, message):
         await y.edit(error)
 
 
-@PY.UBOT("cewek")
-@PY.TOP_CMD
+@WANN.UBOT("cewek")
+@WANN.TOP_CMD
 async def photo_cewek(client, message):
     prs = await EMO.PROSES(client)
     y = await message.reply_text(f"{prs}mencari ayang...")
@@ -53,8 +53,8 @@ async def photo_cewek(client, message):
         await y.edit(error)
 
 
-@PY.UBOT("cowok")
-@PY.TOP_CMD
+@WANN.UBOT("cowok")
+@WANN.TOP_CMD
 async def photo_cowok(client, message):
     prs = await EMO.PROSES(client)
     y = await message.reply_text(f"{prs}mencari ayang...")
