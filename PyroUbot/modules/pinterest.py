@@ -13,7 +13,7 @@ __HELP__ = """
    <i>penjelasan:</b> mendowload media dari pencarian.</i></blockquote>
 """
 
-@PY.UBOT("pinsearch")
+@WANN.UBOT("pinsearch")
 async def pin(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
