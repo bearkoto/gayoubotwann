@@ -10,7 +10,7 @@ from PyroUbot import *
 CONFIRM_PAYMENT = []
 
 
-@PY.CALLBACK("^confirm")
+@WANN.CALLBACK("^confirm")
 async def _(client, callback_query):
     user_id = int(callback_query.from_user.id)
     full_name = f"{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}"
@@ -64,7 +64,7 @@ async def _(client, callback_query):
             )
 
 
-@PY.CALLBACK("^(kurang|tambah)")
+@WANN.CALLBACK("^(kurang|tambah)")
 async def _(client, callback_query):
     BULAN = int(callback_query.data.split()[1])
     HARGA = 20
@@ -88,7 +88,7 @@ async def _(client, callback_query):
     except:
         pass
 
-@PY.CALLBACK("^(success|failed|home)")
+@WANN.CALLBACK("^(success|failed|home)")
 async def _(client, callback_query):
     query = callback_query.data.split()
     get_user = await bot.get_users(query[1])
