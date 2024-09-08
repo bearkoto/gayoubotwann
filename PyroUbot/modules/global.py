@@ -27,8 +27,8 @@ perintah : <code>{0}ungmute</code>
 
       
 
-@PY.UBOT("gban")
-@PY.TOP_CMD
+@WANN.UBOT("gban")
+@WANN.TOP_CMD
 async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
@@ -65,8 +65,8 @@ async def _(client, message):
     return await Tm.delete()
 
 
-@PY.UBOT("ungban")
-@PY.TOP_CMD
+@WANN.UBOT("ungban")
+@WANN.TOP_CMD
 async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
@@ -105,8 +105,8 @@ async def _(client, message):
     )
     return await Tm.delete()
 
-@PY.UBOT("gmute")
-@PY.TOP_CMD
+@WANN.UBOT("gmute")
+@WANN.TOP_CMD
 async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
@@ -142,8 +142,8 @@ async def _(client, message):
     )
     return await Tm.delete()
 
-@PY.UBOT("ungmute")
-@PY.TOP_CMD
+@WANN.UBOT("ungmute")
+@WANN.TOP_CMD
 async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
