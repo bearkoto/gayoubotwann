@@ -17,8 +17,8 @@ perintah : <code>{0}gikesdb</code>
     mengirim pesan siaran grup/pesan database</blockquote>
 """
 
-@PY.UBOT("gikesdb")
-@PY.TOP_CMD
+@WANN.UBOT("gikesdb")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -59,8 +59,8 @@ gagal {failed} chat database
 """
     return await message.reply(_gcs)
 
-@PY.UBOT("adddb")
-@PY.TOP_CMD
+@WANN.UBOT("adddb")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BERHASIL(client)
@@ -86,8 +86,8 @@ async def _(client, message):
         return await msg.edit(str(error))
 
 
-@PY.UBOT("undb")
-@PY.TOP_CMD
+@WANN.UBOT("undb")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     grp = await EMO.BERHASIL(client)
@@ -113,8 +113,8 @@ async def _(client, message):
         return await msg.edit(str(error))
 
 
-@PY.UBOT("listdb")
-@PY.TOP_CMD
+@WANN.UBOT("listdb")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -138,8 +138,8 @@ async def _(client, message):
     return await mzg.edit(list)
 
 
-@PY.UBOT("ralldb")
-@PY.TOP_CMD
+@WANN.UBOT("ralldb")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
