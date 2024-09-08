@@ -26,7 +26,7 @@ def text_set(text):
                     lines.append(line[((z - 1) * 55) : (z * 55)])
     return lines[:25]
 
-@PY.UBOT("nulis")
+@WANN.UBOT("nulis")
 async def _(client, message):
     if message.reply_to_message:
         reply = message.reply_to_message
