@@ -13,7 +13,7 @@ __HELP__ = """
 """
 
 
-@PY.UBOT("done")
+@WANN.UBOT("done")
 async def done_command(client, message):
     izzy_ganteng = await message.reply("<blockquote>memproses...</blockquote>")
     await asyncio.sleep(5)
