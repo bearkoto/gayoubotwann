@@ -30,8 +30,8 @@ async def SpamMsg(client, message, send):
     else:
         await client.send_message(message.chat.id, f"{send}\n\n<b>-- USERBOT 15K/BULAN BY {USER_GROUP} --</b>")
 
-@PY.UBOT("spam")
-@PY.TOP_CMD
+@WANN.UBOT("spam")
+@WANN.TOP_CMD
 async def _(client, message):
     global spam_progress
     spam_progress.append(client.me.id)
@@ -60,8 +60,8 @@ async def _(client, message):
     spam_progress.remove(client.me.id)    
     await r.edit("<b>spam telah selesai</b>")
 
-@PY.UBOT("setdelay")
-@PY.TOP_CMD
+@WANN.UBOT("setdelay")
+@WANN.TOP_CMD
 async def _(client, message):
     _msg = "<b>memproses...</b>"
 
@@ -79,8 +79,8 @@ async def _(client, message):
     await set_vars(client.me.id, "SPAM", count)
     return await r.edit("<b>spam delay berhasil di setting</b>")
 
-@PY.UBOT("stopspam")
-@PY.TOP_CMD
+@WANN.UBOT("stopspam")
+@WANN.TOP_CMD
 async def _(client, message):
     global spam_progress
     if client.me.id in spam_progress:
