@@ -12,7 +12,7 @@ __HELP__ = """
    <i>penjelasan:</b> cek info sekitar gempa bmkg</i></blockquote>
 """
 
-@PY.UBOT("gempa")
+@WANN.UBOT("gempa")
 async def stalkig(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
