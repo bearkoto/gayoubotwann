@@ -12,7 +12,7 @@ __HELP__ = """
    <i>penjelasan:</b> search akun ff menggunakan id</i></blockquote>
 """
 
-@PY.UBOT("stalkff")
+@WANN.UBOT("stalkff")
 async def stalkff(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
