@@ -5,8 +5,8 @@ from pyrogram.types import ChatPermissions, ChatPrivileges, Message
 
 from PyroUbot import *
 
-@PY.UBOT("etmin")
-@PY.TOP_CMD
+@WANN.UBOT("etmin")
+@WANN.TOP_CMD
 async def promotte(client: Client, message: Message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
@@ -36,8 +36,8 @@ async def promotte(client: Client, message: Message):
     except ChatAdminRequired:
         await anu.edit(f"{ggl}**anda bukan admin di group ini !**")
 
-@PY.UBOT("ceo")
-@PY.TOP_CMD
+@WANN.UBOT("ceo")
+@WANN.TOP_CMD
 async def promotte(client: Client, message: Message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
@@ -68,8 +68,8 @@ async def promotte(client: Client, message: Message):
         await anu.edit(f"{ggl}**anda bukan admin di group ini !**")
 
  
-@PY.UBOT("demote")
-@PY.TOP_CMD
+@WANN.UBOT("demote")
+@WANN.TOP_CMD
 async def demote(client: Client, message: Message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
@@ -99,8 +99,8 @@ async def demote(client: Client, message: Message):
     await sempak.edit(sempak)
     await sempak.delete()
 
-@PY.UBOT("getlink")
-@PY.TOP_CMD
+@WANN.UBOT("getlink")
+@WANN.TOP_CMD
 async def get_link(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
