@@ -7,8 +7,8 @@ from pytz import timezone
 from PyroUbot import *
 
 
-@PY.BOT("prem")
-@PY.SELLER
+@WANN.BOT("prem")
+@WANN.SELLER
 async def _(client, message):
     user_id, get_bulan = await extract_user_and_reason(message)
     msg = await message.reply("memproses...")
@@ -66,8 +66,8 @@ async def _(client, message):
         return await msg.edit(error)
 
 
-@PY.BOT("unprem")
-@PY.SELLER
+@WANN.BOT("unprem")
+@WANN.SELLER
 async def _(client, message):
     msg = await message.reply("sedang memproses...")
     user_id = await extract_user(message)
@@ -105,8 +105,8 @@ async def _(client, message):
         return await msg.edit(error)
         
 
-@PY.BOT("getprem")
-@PY.SELLER
+@WANN.BOT("getprem")
+@WANN.SELLER
 async def _(client, message):
     text = ""
     count = 0
@@ -126,8 +126,8 @@ async def _(client, message):
         await message.reply_text(text)
 
 
-@PY.BOT("addseles")
-@PY.ADMIN
+@WANN.BOT("addseles")
+@WANN.ADMIN
 async def _(client, message):
     msg = await message.reply("sedang memproses...")
     user_id = await extract_user(message)
@@ -165,8 +165,8 @@ async def _(client, message):
         return await msg.edit(error)
 
 
-@PY.BOT("unseles")
-@PY.ADMIN
+@WANN.BOT("unseles")
+@WANN.ADMIN
 async def _(client, message):
     msg = await message.reply("sedang memproses...")
     user_id = await extract_user(message)
@@ -204,8 +204,8 @@ async def _(client, message):
         return await msg.edit(error)
 
 
-@PY.BOT("getseles")
-@PY.ADMIN
+@WANN.BOT("getseles")
+@WANN.ADMIN
 async def _(client, message):
     Sh = await message.reply("sedang memproses...")
     seles_users = await get_list_from_vars(client.me.id, "SELER_USERS")
@@ -234,8 +234,8 @@ async def _(client, message):
         return await Sh.edit("tidak dapat mengambil daftar seller")
 
 
-@PY.BOT("set_time")
-@PY.SELLER
+@WANN.BOT("set_time")
+@WANN.SELLER
 async def _(client, message):
     Tm = await message.reply("processing . . .")
     bajingan = message.command
@@ -263,8 +263,8 @@ async def _(client, message):
     )
 
 
-@PY.BOT("cek")
-@PY.SELLER
+@WANN.BOT("cek")
+@WANN.SELLER
 async def _(client, message):
     Sh = await message.reply("processing . . .")
     user_id = await extract_user(message)
@@ -302,8 +302,8 @@ expired : {exp}
         )
 
 
-@PY.BOT("addadmin")
-@PY.OWNER
+@WANN.BOT("addadmin")
+@WANN.OWNER
 async def _(client, message):
     msg = await message.reply("sedang memproses...")
     user_id = await extract_user(message)
@@ -341,8 +341,8 @@ keterangan: admin
         return await msg.edit(error)
 
 
-@PY.BOT("unadmin")
-@PY.OWNER
+@WANN.BOT("unadmin")
+@WANN.OWNER
 async def _(client, message):
     msg = await message.reply("sedang memproses...")
     user_id = await extract_user(message)
@@ -380,8 +380,8 @@ keterangan: unadmin
         return await msg.edit(error)
 
 
-@PY.BOT("getadmin")
-@PY.OWNER
+@WANN.BOT("getadmin")
+@WANN.OWNER
 async def _(client, message):
     Sh = await message.reply("sedang memproses...")
     admin_users = await get_list_from_vars(client.me.id, "ADMIN_USERS")
@@ -409,8 +409,8 @@ async def _(client, message):
     else:
         return await Sh.edit("tidak dapat mengambil daftar admin")
 
-@PY.BOT("superultra")
-@PY.SELLER
+@WANN.BOT("superultra")
+@WANN.SELLER
 async def _(client, message):
     user_id, get_bulan = await extract_user_and_reason(message)
     msg = await message.reply("memproses...")
@@ -468,8 +468,8 @@ async def _(client, message):
     except Exception as error:
         return await msg.edit(error)
 
-@PY.BOT("rmultra")
-@PY.SELLER
+@WANN.BOT("rmultra")
+@WANN.SELLER
 async def _(client, message):
     msg = await message.reply("sedang memproses...")
     user_id = await extract_user(message)
@@ -505,8 +505,8 @@ async def _(client, message):
         return await msg.edit(error)
         
 
-@PY.BOT("getultra")
-@PY.SELLER
+@WANN.BOT("getultra")
+@WANN.SELLER
 async def _(client, message):
     prem = await get_list_from_vars(client.me.id, "ULTRA_PREM")
     prem_users = []
