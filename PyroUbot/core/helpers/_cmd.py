@@ -20,7 +20,7 @@ async def if_private(_, client, message):
     on_off = await get_vars(client.me.id, "FILTER_PVT_ON_OFF")
     return bool(on_off)
 
-class PY:
+class WANN:
     @staticmethod
     def ADMIN(func):
         async def function(client, message):
