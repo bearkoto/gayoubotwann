@@ -34,8 +34,8 @@ perintah : <code>{0}mmf</code>
 """
 
 
-@PY.UBOT("mmf")
-@PY.TOP_CMD
+@WANN.UBOT("mmf")
+@WANN.TOP_CMD
 async def _(client, message):
     if not message.reply_to_message:
         return await message.reply("balas ke pesan foto atau sticker!")
@@ -59,8 +59,8 @@ async def _(client, message):
     os.remove(meme)
 
 
-@PY.UBOT("q")
-@PY.TOP_CMD
+@WANN.UBOT("q")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -117,8 +117,8 @@ async def _(client, message):
     return await client.invoke(DeleteHistory(peer=user_info, max_id=0, revoke=True))
 
 
-@PY.UBOT("tiny")
-@PY.TOP_CMD
+@WANN.UBOT("tiny")
+@WANN.TOP_CMD
 async def _(client, message):
     reply = message.reply_to_message
     if not (reply and (reply.media)):
@@ -196,8 +196,8 @@ async def _(client, message):
 
 
 
-@PY.UBOT("kang")
-@PY.TOP_CMD
+@WANN.UBOT("kang")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
