@@ -29,9 +29,9 @@ perintah : <code>{0}toaudio</code>
 
 
 
-@PY.UBOT("toanime")
-@PY.TOP_CMD
-@PY.TOP_CMD
+@WANN.UBOT("toanime")
+@WANN.TOP_CMD
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -108,9 +108,9 @@ async def _(client, message):
         return await client.invoke(DeleteHistory(peer=info, max_id=0, revoke=True))
 
 
-@PY.UBOT("toimg")
-@PY.TOP_CMD
-@PY.TOP_CMD
+@WANN.UBOT("toimg")
+@WANN.TOP_CMD
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     _msg = f"{prs}proceꜱꜱing..."
@@ -134,8 +134,8 @@ async def _(client, message):
         )
 
 
-@PY.UBOT("tosticker")
-@PY.TOP_CMD
+@WANN.UBOT("tosticker")
+@WANN.TOP_CMD
 async def _(client, message):
     try:
         if not message.reply_to_message or not message.reply_to_message.photo:
@@ -150,8 +150,8 @@ async def _(client, message):
         await message.reply_text(str(e))
 
 
-@PY.UBOT("togif")
-@PY.TOP_CMD
+@WANN.UBOT("togif")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
@@ -173,8 +173,8 @@ async def _(client, message):
         await TM.edit(error)
 
 
-@PY.UBOT("toaudio")
-@PY.TOP_CMD
+@WANN.UBOT("toaudio")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -209,8 +209,8 @@ async def _(client, message):
         return await Tm.edit(f"{ggl}mohon balas ke video")
 
 
-@PY.UBOT("colong")
-@PY.TOP_CMD
+@WANN.UBOT("colong")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
