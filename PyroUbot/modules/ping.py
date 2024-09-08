@@ -13,8 +13,8 @@ from pyrogram.raw.functions import Ping
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from PyroUbot import *
 
-@PY.UBOT("ping")
-@PY.TOP_CMD
+@WANN.UBOT("ping")
+@WANN.TOP_CMD
 async def _(client, message):
     start = datetime.now()
     await client.invoke(Ping(ping_id=0))
@@ -44,7 +44,7 @@ async def _(client, message):
 """
         await message.reply(_ping)
 
-@PY.INDRI("1ping")
+@WANN.INDRI("1ping")
 async def _(client, message):
     command = message.text.split()
     if len(command) < 2:
