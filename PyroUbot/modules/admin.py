@@ -105,9 +105,9 @@ async def tg_lock(
     )
 
 
-@PY.UBOT("lock|unlock")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("lock|unlock")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     if len(message.command) != 2:
         return await message.reply(f"{message.text.split()[0]} [type]")
@@ -160,9 +160,9 @@ async def _(client, message):
         )
 
 
-@PY.UBOT("locks")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("locks")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     permissions = await current_chat_permissions(client, message.chat.id)
     if not permissions:
@@ -172,9 +172,9 @@ async def _(client, message):
     await message.reply(perms)
 
 
-@PY.UBOT("kick|ban|mute|unmute|unban")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("kick|ban|mute|unmute|unban")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -289,9 +289,9 @@ async def _(client, message):
             await message.reply(error)
 
 
-@PY.UBOT("zombies")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("zombies")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
