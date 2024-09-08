@@ -12,7 +12,7 @@ __HELP__ = """
    <i>penjelasan:</i> untuk stalk github menggunakan username</i></blockquote>
 """
 
-@PY.UBOT("stalkgh")
+@WANN.UBOT("stalkgh")
 async def stalkyt(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
