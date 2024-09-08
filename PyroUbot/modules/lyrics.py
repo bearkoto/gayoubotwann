@@ -12,7 +12,7 @@ __HELP__ = """
    <i>penjelasan:</b> search lyrics music</i>
 """
 
-@PY.UBOT("lyrics")
+@WANN.UBOT("lyrics")
 async def lyrics(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
