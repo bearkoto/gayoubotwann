@@ -38,8 +38,8 @@ perintah : <code>{0}font</code>
 """
 
 
-@PY.UBOT("limit")
-@PY.TOP_CMD
+@WANN.UBOT("limit")
+@WANN.TOP_CMD
 async def _(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
@@ -105,8 +105,8 @@ async def make_carbon(code):
     return image
 
 
-@PY.UBOT("carbon")
-@PY.TOP_CMD
+@WANN.UBOT("carbon")
+@WANN.TOP_CMD
 async def carbon_func(client, message):
     text = (
         message.text.split(None, 1)[1]
@@ -168,8 +168,8 @@ def qr_gen(content):
     }
 
 
-@PY.UBOT("qrgen")
-@PY.TOP_CMD
+@WANN.UBOT("qrgen")
+@WANN.TOP_CMD
 async def _(client, message):
     ID = message.reply_to_message or message
     if message.reply_to_message:
@@ -196,8 +196,8 @@ async def _(client, message):
 
 
 
-@PY.UBOT("qrread")
-@PY.TOP_CMD
+@WANN.UBOT("qrread")
+@WANN.TOP_CMD
 async def _(client, message):
     replied = message.reply_to_message
     if not (replied and replied.media and (replied.photo or replied.sticker)):
@@ -237,8 +237,8 @@ async def _(client, message):
     await AM.edit(f"data qrcode:\n{qr_contents}")
 
 
-@PY.UBOT("tg")
-@PY.TOP_CMD
+@WANN.UBOT("tg")
+@WANN.TOP_CMD
 async def _(client, message):
     XD = await message.reply("sedang memproses . . .")
     if not message.reply_to_message:
@@ -266,8 +266,8 @@ async def _(client, message):
         await XD.edit(wow_graph)
 
   
-@PY.UBOT("font")
-@PY.TOP_CMD
+@WANN.UBOT("font")
+@WANN.TOP_CMD
 async def _(client, message):
     if message.reply_to_message:
         if message.reply_to_message.text:
@@ -286,7 +286,7 @@ async def _(client, message):
         return await message.reply(error)
 
 
-@PY.INLINE("^get_font")
+@WANN.INLINE("^get_font")
 async def _(client, inline_query):
     get_id = int(inline_query.query.split(None, 1)[1])
     buttons = InlineKeyboard(row_width=3)
@@ -314,7 +314,7 @@ async def _(client, inline_query):
     )
 
 
-@PY.CALLBACK("^get")
+@WANN.CALLBACK("^get")
 async def _(client, callback_query):
     try:
         q = int(callback_query.data.split()[1])
@@ -330,7 +330,7 @@ async def _(client, callback_query):
         return await callback_query.answer(f"Error: {error}", True)
 
 
-@PY.CALLBACK("^next")
+@WANN.CALLBACK("^next")
 async def _(client, callback_query):
     try:
         get_id = int(callback_query.data.split()[1])
@@ -349,7 +349,7 @@ async def _(client, callback_query):
         return await callback_query.answer(f"Error: {error}", True)
 
 
-@PY.CALLBACK("^prev")
+@WANN.CALLBACK("^prev")
 async def _(client, callback_query):
     try:
         get_id = int(callback_query.data.split()[1])
