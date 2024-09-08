@@ -43,8 +43,8 @@ URLS = {
     "korea": "https://api.botcahx.eu.org/api/cecan/korea?apikey=ApiKhususWannAza"
 }
 
-@PY.UBOT("cecan")
-@PY.TOP_CMD
+@WANN.UBOT("cecan")
+@WANN.TOP_CMD
 async def _(client, message):
     # Extract query from message
     query = message.text.split()[1] if len(message.text.split()) > 1 else None
