@@ -14,8 +14,8 @@ perintah : <code>{0}ai</code>
 """
 
 
-@PY.UBOT("ai")
-@PY.TOP_CMD
+@WANN.UBOT("ai")
+@WANN.TOP_CMD
 async def chat_gpt(client, message):
     try:
         await client.send_chat_action(message.chat.id, ChatAction.TYPING)
