@@ -80,7 +80,7 @@ async def nyolongnih(client, message):
     except Exception as e:
         await message.reply_text(e)
 
-@PY.UBOT("copy")
+@WANN.UBOT("copy")
 async def _(client, message):
     await nyolongnih(client, message)
 
