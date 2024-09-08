@@ -14,8 +14,8 @@ note: jumlah menu game 500+</blockquote>
 """
 
 
-@PY.UBOT("catur")
-@PY.TOP_CMD
+@WANN.UBOT("catur")
+@WANN.TOP_CMD
 async def _(client, message):
     try:
         x = await client.get_inline_bot_results("GameFactoryBot")
@@ -27,8 +27,8 @@ async def _(client, message):
         await message.reply(error)
 
 
-@PY.UBOT("game")
-@PY.TOP_CMD
+@WANN.UBOT("game")
+@WANN.TOP_CMD
 async def game_cmd(client, message):
     try:
         x = await client.get_inline_bot_results("gamee")
