@@ -30,9 +30,9 @@ from youtubesearchpython import VideosSearch
 from pyrogram.enums import ChatType
 from PyroUbot import *
 
-@PY.UBOT("lvc")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("lvc")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def leave_vc(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -48,9 +48,9 @@ async def leave_vc(client, message):
     except Exception as e:
         print(e)
 
-@PY.UBOT("jvc")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("jvc")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def join_vc(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
