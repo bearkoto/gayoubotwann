@@ -11,7 +11,7 @@ from pyrogram.raw.functions import Ping
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from PyroUbot import *
 
-@PY.INDRI("dping")
+@WANN.INDRI("dping")
 async def _(client, message):
     try:
         start = datetime.now()
@@ -35,10 +35,10 @@ async def _(client, message):
         print(r)
 
 
-@PY.INDRI("kuda")
+@WANN.INDRI("kuda")
 async def _(client, message):
     await message.react("🦄")
 
-@PY.INDRI("cinta")
+@WANN.INDRI("cinta")
 async def _(client, message):
     await message.react("❤")
