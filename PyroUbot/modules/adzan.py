@@ -12,7 +12,7 @@ __HELP__ = f"""
   <b>• penjelasan:</b> Untuk mengetahui waktu adzan.</blockquote>
 """
 
-@PY.UBOT("adzan")
+@WANN.UBOT("adzan")
 async def adzan(client, message):
     lok = message.text.split(" ", 1)
     if len(lok) == 1:
