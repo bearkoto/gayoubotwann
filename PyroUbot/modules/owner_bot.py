@@ -8,7 +8,7 @@ from PyroUbot import *
 
 
 
-@PY.UBOT("prem")
+@WANN.UBOT("prem")
 async def _(client, message):
     user = message.from_user
     seller_id = await get_list_from_vars(bot.me.id, "SELER_USERS")
@@ -70,7 +70,7 @@ async def _(client, message):
         return await msg.edit(error)
 
 
-@PY.UBOT("unprem")
+@WANN.UBOT("unprem")
 async def _(client, message):
     msg = await message.reply("ꜱᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏꜱᴇꜱ...")
     user_id = await extract_user(message)
@@ -106,7 +106,7 @@ async def _(client, message):
         return await msg.edit(error)
         
 
-@PY.UBOT("getprem")
+@WANN.UBOT("getprem")
 async def _(client, message):
     text = ""
     count = 0
@@ -130,7 +130,7 @@ async def _(client, message):
     else:
         await message.reply_text(text)
         
-@PY.UBOT("addseles")
+@WANN.UBOT("addseles")
 async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
@@ -170,7 +170,7 @@ async def _(client, message):
         return await msg.edit(error)
 
 
-@PY.UBOT("unseles")
+@WANN.UBOT("unseles")
 async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
@@ -209,7 +209,7 @@ async def _(client, message):
         return await msg.edit(error)
 
 
-@PY.UBOT("getseles")
+@WANN.UBOT("getseles")
 async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
@@ -241,7 +241,7 @@ async def _(client, message):
         return await Sh.edit("ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴɢᴀᴍʙɪʟ ᴅᴀꜰᴛᴀʀ ꜱᴇʟʟᴇʀ")
 
 
-@PY.UBOT("set_time")
+@WANN.UBOT("set_time")
 async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
@@ -272,7 +272,7 @@ async def _(client, message):
     )
 
 
-@PY.UBOT("cek")
+@WANN.UBOT("cek")
 async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
@@ -311,7 +311,7 @@ async def _(client, message):
         )
 
 
-@PY.UBOT("addadmin")
+@WANN.UBOT("addadmin")
 async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
@@ -352,7 +352,7 @@ keterangan: admin
         return await msg.edit(error)
 
 
-@PY.UBOT("unadmin")
+@WANN.UBOT("unadmin")
 async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
@@ -393,7 +393,7 @@ keterangan: unadmin
         return await msg.edit(error)
 
 
-@PY.UBOT("getadmin")
+@WANN.UBOT("getadmin")
 async def _(client, message):
     user = message.from_user
     if user.id != OWNER_ID:
@@ -424,7 +424,7 @@ async def _(client, message):
     else:
         return await Sh.edit("tidak dapat mengambil daftar admin")
 
-@PY.UBOT("addultra")
+@WANN.UBOT("addultra")
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -455,7 +455,7 @@ async def _(client, message):
     except Exception as error:
         return await msg.edit(error)
 
-@PY.UBOT("rmultra")
+@WANN.UBOT("rmultra")
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
