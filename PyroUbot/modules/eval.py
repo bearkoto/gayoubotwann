@@ -34,20 +34,20 @@ async def cukimay(client, message):
     except Exception as error:
         await msg.edit(error)
 
-@PY.UBOT("sh")
+@WANN.UBOT("sh")
 async def _(client, message):
     await cukimay(client, message)
 
-@PY.BOT("shell")
+@WANN.BOT("shell")
 async def _(client, message):
     await cukimay(client, message)
 
-@PY.CALLBACK("cb_restart")
+@WANN.CALLBACK("cb_restart")
 async def cb_restart(client, callback_query):
     await callback_query.message.delete()
     os.system(f"kill -9 {os.getpid()} && python3 -m PyroUbot")
 
-@PY.CALLBACK("cb_gitpull")
+@WANN.CALLBACK("cb_gitpull")
 async def cb_gitpull(client, callback_query):
     await callback_query.message.delete()
     os.system(f"kill -9 {os.getpid()} && git pull && python3 -m PyroUbot")
@@ -87,7 +87,7 @@ async def send_large_output(message, output):
         await message.reply_document(document=out_file)
 
 
-@PY.UBOT("eval")
+@WANN.UBOT("eval")
 async def _(client, message):
     if message.from_user.id != OWNER_ID:
         await message.reply_text(f"mau ngapain anjenk?")
@@ -136,8 +136,8 @@ async def _(client, message):
 
 
 
-@PY.UBOT("trash")
-@PY.TOP_CMD
+@WANN.UBOT("trash")
+@WANN.TOP_CMD
 async def _(client, message):
     if message.reply_to_message:
         try:
