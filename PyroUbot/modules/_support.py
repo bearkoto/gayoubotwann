@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 SUPPORT = []
 
-@PY.CALLBACK("^support")
+@WANN.CALLBACK("^support")
 async def support_callback(client, callback_query):
     user_id = int(callback_query.from_user.id)
     full_name = f"{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}"
@@ -47,7 +47,7 @@ async def support_callback(client, callback_query):
             return await client.send_message(user_id, error)
 
 
-@PY.CALLBACK("^jawab_pesan")
+@WANN.CALLBACK("^jawab_pesan")
 async def jawab_pesan_callback(client, callback_query):
     user_id = int(callback_query.from_user.id)
     full_name = f"{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}"
@@ -93,7 +93,7 @@ async def jawab_pesan_callback(client, callback_query):
             return await client.send_message(user_id, error)
 
 
-@PY.CALLBACK("^profil")
+@WANN.CALLBACK("^profil")
 async def profil_callback(client, callback_query):
     user_id = int(callback_query.data.split()[1])
     try:
@@ -131,7 +131,7 @@ async def profil_callback(client, callback_query):
         await callback_query.message.reply_text(why)
 
 
-@PY.CALLBACK("^batal")
+@WANN.CALLBACK("^batal")
 async def batal_callback(client, callback_query):
     user_id = int(callback_query.data.split()[1])
     if user_id in SUPPORT:
