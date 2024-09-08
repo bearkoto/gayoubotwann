@@ -37,8 +37,8 @@ contoh menggunakan callback/tombol : <a href='https://t.me/halopyrogram/174'>tut
 """
 
 
-@PY.UBOT("addnote|addcb")
-@PY.TOP_CMD
+@WANN.UBOT("addnote|addcb")
+@WANN.TOP_CMD
 async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -89,8 +89,8 @@ async def _(client, message):
         )
 
 
-@PY.UBOT("delnote|delcb")
-@PY.TOP_CMD
+@WANN.UBOT("delnote|delcb")
+@WANN.TOP_CMD
 async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -112,8 +112,8 @@ async def _(client, message):
     return await message.reply(f"<brhsl>{brhsl}catan {args} berhasil dihapus")
 
 
-@PY.UBOT("get")
-@PY.TOP_CMD
+@WANN.UBOT("get")
+@WANN.TOP_CMD
 async def _(client, message):
     ggl = await EMO.GAGAL(client)
     msg = message.reply_to_message or message
@@ -153,8 +153,8 @@ async def _(client, message):
         return await m.copy(message.chat.id, reply_to_message_id=msg.id)
 
 
-@PY.UBOT("listnote|listcb")
-@PY.TOP_CMD
+@WANN.UBOT("listnote|listcb")
+@WANN.TOP_CMD
 async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -172,7 +172,7 @@ async def _(client, message):
     return await message.reply(msg, quote=True)
 
 
-@PY.INLINE("^get_notes")
+@WANN.INLINE("^get_notes")
 async def _(client, inline_query):
     query = inline_query.query.split()
     data = await get_vars(int(query[1]), query[2], "notes")
@@ -195,7 +195,7 @@ async def _(client, inline_query):
         )
 
 
-@PY.CALLBACK("_gtnote")
+@WANN.CALLBACK("_gtnote")
 async def _(client, callback_query):
     _, user_id, *query = callback_query.data.split()
     data_key = "notes_cb" if bool(query) else "notes"
