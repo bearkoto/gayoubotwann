@@ -9,7 +9,7 @@ from platform import python_version
 from pyrogram import __version__
 HELP_COMMANDS = {}
 
-h
+
 async def loadPlugins():
     modules = loadModule()
     for mod in modules:
