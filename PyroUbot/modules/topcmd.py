@@ -23,7 +23,7 @@ async def get_top_module(client, message):
 
     await message.reply(txt)
 
-@PY.UBOT("top")
-@PY.OWNER
+@WANN.UBOT("top")
+@WANN.OWNER
 async def _(client, message):
     await get_top_module(client, message)
