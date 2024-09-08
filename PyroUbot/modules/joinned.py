@@ -27,9 +27,9 @@ perintah : <code>{0}leaveallch</code>
 """
 
 
-@PY.UBOT("kickme")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("kickme")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
@@ -46,8 +46,8 @@ async def _(client, message):
 
 
 
-@PY.UBOT("join")
-@PY.TOP_CMD
+@WANN.UBOT("join")
+@WANN.TOP_CMD
 async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
@@ -61,8 +61,8 @@ async def _(client, message):
         await xxnx.edit(f"{ggl}ERROR: \n\n{str(ex)}")
 
 
-@PY.UBOT("leaveallgc")
-@PY.TOP_CMD
+@WANN.UBOT("leaveallgc")
+@WANN.TOP_CMD
 async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
@@ -85,8 +85,8 @@ async def _(client, message):
     )
 
 
-@PY.UBOT("leaveallch")
-@PY.TOP_CMD
+@WANN.UBOT("leaveallch")
+@WANN.TOP_CMD
 async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
@@ -108,8 +108,8 @@ async def _(client, message):
         f"{sks}berhaꜱil keluar dari {done} channel\n{ggl}gagal keluar dari {er} channel"
     )
 
-@PY.UBOT("leaveallmute")
-@PY.TOP_CMD
+@WANN.UBOT("leaveallmute")
+@WANN.TOP_CMD
 async def _(client, message):
     sks = await EMO.BERHASIL(client)
     prs = await EMO.PROSES(client)
