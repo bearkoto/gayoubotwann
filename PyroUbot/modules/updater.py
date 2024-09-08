@@ -20,13 +20,13 @@ async def ngentod(client, message):
         await message.reply(f"```{out}```", quote=True)
     os.execl(sys.executable, sys.executable, "-m", "PyroUbot")
 
-@PY.BOT("update")
-@PY.OWNER
+@WANN.BOT("update")
+@WANN.OWNER
 async def _(c, m):
     await ngentod(c, m)
 
 
-@PY.UBOT("update")
-@PY.OWNER
+@WANN.UBOT("update")
+@WANN.OWNER
 async def _(c, m):
     await ngentod(c, m)
