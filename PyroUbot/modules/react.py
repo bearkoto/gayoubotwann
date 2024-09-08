@@ -17,8 +17,8 @@ from pyrogram.errors.exceptions import UserNotParticipant
 
 reaction_progress = []
 
-@PY.UBOT("react")
-@PY.TOP_CMD
+@WANN.UBOT("react")
+@WANN.TOP_CMD
 async def react_command(c, m):
     ggl = await EMO.GAGAL(c)
     sks = await EMO.BERHASIL(c)
@@ -49,8 +49,8 @@ async def react_command(c, m):
         reaction_progress.remove(c.me.id)
 
 
-@PY.UBOT("stopreact")
-@PY.TOP_CMD
+@WANN.UBOT("stopreact")
+@WANN.TOP_CMD
 async def stopreact_command(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
