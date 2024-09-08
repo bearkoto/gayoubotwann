@@ -144,7 +144,7 @@ class PinterestMediaDownloader:
             self.best_sizes.append(new_m[0])
 
 
-@PY.UBOT("ig")
+@WANN.UBOT("ig")
 async def instacrot(client: Client, message):
     print("processing")
     if len(message.text.split()) < 2:
