@@ -12,7 +12,7 @@ __HELP__ = """
    <i>penjelasan:</b> cek info cuaca di kota kota besar.</i></blockquote>
 """
 
-@PY.UBOT("cuaca")
+@WANN.UBOT("cuaca")
 async def cuaca(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
