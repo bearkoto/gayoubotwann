@@ -14,7 +14,7 @@ __HELP__ = """
    <i>penjelasan:</b> untuk mencari photo couple secara random</i></blockquote>
 """
 
-@PY.UBOT("couple")
+@WANN.UBOT("couple")
 async def pinterest(client, message):
     prs = await EMO.PROSES(client)
     err = await EMO.GAGAL(client)
