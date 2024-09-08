@@ -161,9 +161,9 @@ def emoji_random():
     return random.choice(emoji_categories[random_category])
 
 
-@PY.UBOT("tagall")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("tagall")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     if message.chat.id in tagallgcid:
         return
@@ -189,9 +189,9 @@ async def _(client, message):
         pass
 
 
-@PY.UBOT("batal")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("batal")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     if message.chat.id not in tagallgcid:
         return await message.reply_text(
