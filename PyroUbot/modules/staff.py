@@ -12,8 +12,8 @@ from PyroUbot import *
 
 
 
-@PY.UBOT("staff")
-@PY.TOP_CMD
+@WANN.UBOT("staff")
+@WANN.TOP_CMD
 async def staff_cmd(client, message):
     chat_title = message.chat.title
     creator = []
