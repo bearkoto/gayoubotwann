@@ -40,8 +40,8 @@ perintah : <code>{0}cinfo</code>
 """
 
 
-@PY.UBOT("sg")
-@PY.TOP_CMD
+@WANN.UBOT("sg")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     ggl = await EMO.GAGAL(client)
@@ -74,8 +74,8 @@ async def _(client, message):
     return await client.invoke(DeleteHistory(peer=user_info, max_id=0, revoke=True))
 
 
-@PY.UBOT("info")
-@PY.TOP_CMD
+@WANN.UBOT("info")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -129,8 +129,8 @@ async def _(client, message):
         return await Tm.edit(f"info: {e}")
 
 
-@PY.UBOT("cinfo")
-@PY.TOP_CMD
+@WANN.UBOT("cinfo")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -180,8 +180,8 @@ async def _(client, message):
         return await Tm.edit(f"info: `{e}`")
 
 
-@PY.UBOT("id")
-@PY.TOP_CMD
+@WANN.UBOT("id")
+@WANN.TOP_CMD
 async def _(client, message):
     text = f"<emoji id=6026218958900695642>💎</emoji> ᴍᴇꜱꜱᴀɢᴇ ɪᴅ: `{message.id}`\n"
 
@@ -216,8 +216,8 @@ async def _(client, message):
     return await message.reply(text, disable_web_page_preview=True)
 
 
-@PY.UBOT("setbio")
-@PY.TOP_CMD
+@WANN.UBOT("setbio")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -236,8 +236,8 @@ async def _(client, message):
         return await tex.edit(f"{ggl}berikan tekꜱ untuk ditetapkan ꜱebagai bio")
 
 
-@PY.UBOT("setname")
-@PY.TOP_CMD
+@WANN.UBOT("setname")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -258,8 +258,8 @@ async def _(client, message):
         return await tex.edit(f"{ggl}berikan tekꜱ untuk ditetapkan ꜱebagai nama anda")
 
 
-@PY.UBOT("block")
-@PY.TOP_CMD
+@WANN.UBOT("block")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -275,8 +275,8 @@ async def _(client, message):
     await tex.edit(f"{brhsl}berhaꜱil diblokir {umention}")
   
 
-@PY.UBOT("unblock")
-@PY.TOP_CMD
+@WANN.UBOT("unblock")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -291,8 +291,8 @@ async def _(client, message):
     umention = (await client.get_users(user_id)).mention
     await tex.edit(f"{brhsl}berhaꜱil dibebaꜱkan {umention}")
 
-@PY.UBOT("idm")
-@PY.TOP_CMD
+@WANN.UBOT("idm")
+@WANN.TOP_CMD
 async def _(client, message):
     if not message.reply_to_message:
         return
