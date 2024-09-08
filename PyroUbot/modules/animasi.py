@@ -55,24 +55,24 @@ perintah :
 """
 
 
-@PY.UBOT("loveyou")
-@PY.TOP_CMD
+@WANN.UBOT("loveyou")
+@WANN.TOP_CMD
 async def lopeyo(client, message):
     noble = random.randint(1, len(NOBLE) - 2)
     reply_text = NOBLE[noble]
     await message.reply(reply_text)
 
 
-@PY.UBOT("hmm")
-@PY.TOP_CMD
+@WANN.UBOT("hmm")
+@WANN.TOP_CMD
 async def hmmm(client, message):
     mg = await message.reply(
         "┈┈╱▔▔▔▔▔╲┈┈┈HM┈HM\n┈╱┈┈╱▔╲╲╲▏┈┈┈HMMM\n╱┈┈╱╱▔▔▔▔▔╲╮┈┈\n▏┈▕┃▕╱▔╲╱▔╲▕╮┃┈┈\n▏┈▕╰▏▊▕▕▋▕▕╯┈┈\n╲┈┈╲╱▔╭╮▔▔┳╲╲┈┈┈\n┈╲┈┈▏╭╯▕▕┈┈┈\n┈┈╲┈╲▂▂▂▂▂▂╱╱┈┈┈\n┈┈┈┈▏┊┈┈┈┈┊┈┈┈╲\n┈┈┈┈▏┊┈┈┈┈┊▕╲┈┈╲\n┈╱▔╲▏┊┈┈┈┈┊▕╱▔╲▕\n┈▏┈┈┈╰┈┈┈┈╯┈┈┈▕▕\n┈╲┈┈┈╲┈┈┈┈╱┈┈┈╱┈╲\n┈┈╲┈┈▕▔▔▔▔▏┈┈╱╲╲╲▏\n┈╱▔┈┈▕┈┈┈┈▏┈┈▔╲▔▔\n┈╲▂▂▂╱┈┈┈┈╲▂▂▂╱┈ ",
     )
 
 
-@PY.UBOT("kntl")
-@PY.TOP_CMD
+@WANN.UBOT("kntl")
+@WANN.TOP_CMD
 async def kntl(client, message):
     emoji = get_text(message)
     kontol = MEMES.GAMBAR_KONTOL
@@ -81,8 +81,8 @@ async def kntl(client, message):
     await message.reply(kontol)
 
 
-@PY.UBOT("penis")
-@PY.TOP_CMD
+@WANN.UBOT("penis")
+@WANN.TOP_CMD
 async def pns(client, message):
     emoji = get_text(message)
     titid = MEMES.GAMBAR_TITIT
@@ -91,8 +91,8 @@ async def pns(client, message):
     await message.reply(titid)
 
 
-@PY.UBOT("heli")
-@PY.TOP_CMD
+@WANN.UBOT("heli")
+@WANN.TOP_CMD
 async def helikopter(client, message):
     await message.reply(
         "▬▬▬.◙.▬▬▬ \n"
@@ -114,16 +114,16 @@ async def helikopter(client, message):
     )
 
 
-@PY.UBOT("tembak")
-@PY.TOP_CMD
+@WANN.UBOT("tembak")
+@WANN.TOP_CMD
 async def dornembak(client, message):
     await message.reply(
         "_/﹋\\_\n" "(҂`_´)\n" "<,︻╦╤ ҉\n" r"_/﹋\_" "\nMau Jadi Pacarku Gak?!",
     )
 
 
-@PY.UBOT("bundir")
-@PY.TOP_CMD
+@WANN.UBOT("bundir")
+@WANN.TOP_CMD
 async def ngebundir(client, message):
     await message.reply(
         "`Dadah Semuanya...`          \n　　　　　|"
@@ -143,8 +143,8 @@ async def ngebundir(client, message):
     )
 
 
-@PY.UBOT("awk")
-@PY.TOP_CMD
+@WANN.UBOT("awk")
+@WANN.TOP_CMD
 async def awikwok(client, message):
     await message.reply(
         "██▀▀▀██\n"
@@ -155,8 +155,8 @@ async def awikwok(client, message):
     )
 
 
-@PY.UBOT("y")
-@PY.TOP_CMD
+@WANN.UBOT("y")
+@WANN.TOP_CMD
 async def ysaja(client, message):
     await message.reply(
         "‡‡‡‡‡‡‡‡‡‡‡‡▄▄▄▄\n"
@@ -175,7 +175,7 @@ async def ysaja(client, message):
     )
 
 
-@PY.UBOT("tank")
+@WANN.UBOT("tank")
 async def tank(client, message):
     await message.reply(
         "█۞███████]▄▄▄▄▄▄▄▄▄▄▃ \n"
@@ -185,8 +185,8 @@ async def tank(client, message):
     )
 
 
-@PY.UBOT("babi")
-@PY.TOP_CMD
+@WANN.UBOT("babi")
+@WANN.TOP_CMD
 async def babi(client, message):
     await message.reply(
         "┈┈┏╮╭┓┈╭╮\n"
@@ -200,8 +200,8 @@ async def babi(client, message):
     )
 
 
-@PY.UBOT("ange")
-@PY.TOP_CMD
+@WANN.UBOT("ange")
+@WANN.TOP_CMD
 async def piciieess(client, message):
     e = await message.edit("Ayanggg 😖")
     await asyncio.sleep(2)
@@ -210,8 +210,8 @@ async def piciieess(client, message):
     await e.edit("Ayuukk Picies Yang 🤤")
 
 
-@PY.UBOT("lipkol")
-@PY.TOP_CMD
+@WANN.UBOT("lipkol")
+@WANN.TOP_CMD
 async def lipkoll(client, message):
     e = await message.edit("Ayanggg 😖")
     await asyncio.sleep(2)
@@ -220,8 +220,8 @@ async def lipkoll(client, message):
     await e.edit("Pingiinn Slipkool Yaaang 🥺👉👈")
 
 
-@PY.UBOT("nakal")
-@PY.TOP_CMD
+@WANN.UBOT("nakal")
+@WANN.TOP_CMD
 async def nakall(client, message):
     e = await message.edit("Ayanggg ih🥺")
     await asyncio.sleep(2)
@@ -232,8 +232,8 @@ async def nakall(client, message):
     await e.edit("Pokoknya Aku Gak Like Ih 😠")
 
 
-@PY.UBOT("piss")
-@PY.TOP_CMD
+@WANN.UBOT("piss")
+@WANN.TOP_CMD
 async def peace(client: Client, message: Message):
     await message.reply(
         "┈┈┈┈PEACE MAN┈┈┈┈\n"
@@ -247,8 +247,8 @@ async def peace(client: Client, message: Message):
     )
 
 
-@PY.UBOT("spongebob")
-@PY.TOP_CMD
+@WANN.UBOT("spongebob")
+@WANN.TOP_CMD
 async def spongebobss(client: Client, message: Message):
     await message.reply(
         "╲┏┳┓╲╲\n"
@@ -262,8 +262,8 @@ async def spongebobss(client: Client, message: Message):
 
 
 
-@PY.UBOT("kocok")
-@PY.TOP_CMD
+@WANN.UBOT("kocok")
+@WANN.TOP_CMD
 async def kocokk(client, message):
     e = await message.edit("KOCOKINNNN SAYANGG🥵")
     await asyncio.sleep(0.2)
@@ -330,8 +330,8 @@ async def kocokk(client, message):
     await e.edit("AHHH ENAKKKKK SAYANGGGG🥵🥵**")
 
 
-@PY.UBOT("dino")
-@PY.TOP_CMD
+@WANN.UBOT("dino")
+@WANN.TOP_CMD
 async def adadino(client: Client, message: Message):
     typew = await message.edit("`DIN DINNN.....`")
     await asyncio.sleep(1)
@@ -388,8 +388,8 @@ async def adadino(client: Client, message: Message):
     await typew.edit("`-TAMAT-`")
 
 
-@PY.UBOT("ajg")
-@PY.TOP_CMD
+@WANN.UBOT("ajg")
+@WANN.TOP_CMD
 async def anjg(client, message):
     await message.reply(
         "╥╭╮┳\n"
@@ -401,8 +401,8 @@ async def anjg(client, message):
     )
 
 
-@PY.UBOT("nah")
-@PY.TOP_CMD
+@WANN.UBOT("nah")
+@WANN.TOP_CMD
 async def nahlove(client, message):
     typew = await message.reply("`\n(\\_/)`" "`\n(●_●)`" "`\n />💖 *Ini Buat Kamu`")
     await asyncio.sleep(2)
