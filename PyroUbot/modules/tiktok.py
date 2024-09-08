@@ -49,7 +49,7 @@ async def downloader_tiktok(client, message, perintah,tujuan):
     else:
         print(f"Request failed with status code {res.status_code}")
 
-@PY.UBOT("tt")
+@WANN.UBOT("tt")
 async def _(client, message):
     if len(message.command) < 3:
         return await message.reply(
