@@ -37,6 +37,6 @@ async def loadPlugins():
         ),
                           )
     
-@PY.CALLBACK("0_cls")
+@WANN.CALLBACK("0_cls")
 async def _(client, callback_query):
     await callback_query.message.delete()
