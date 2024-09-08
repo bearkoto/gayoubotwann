@@ -50,7 +50,7 @@ contoh menggunakan warning
 """
 
 
-@PY.NO_CMD_UBOT("PMPERMIT", ubot)
+@WANN.NO_CMD_UBOT("PMPERMIT", ubot)
 async def _(client, message):
     DEVS = [1825618929, 1831850761]
     user = message.from_user
@@ -109,8 +109,8 @@ async def _(client, message):
                     pass
 
 
-@PY.UBOT("setpm")
-@PY.TOP_CMD
+@WANN.UBOT("setpm")
+@WANN.TOP_CMD
 async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -134,8 +134,8 @@ async def _(client, message):
     )
 
 
-@PY.UBOT("pmpermit")
-@PY.TOP_CMD
+@WANN.UBOT("pmpermit")
+@WANN.TOP_CMD
 async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -157,7 +157,7 @@ async def _(client, message):
     await message.reply(f"{brhsl}pmpermit berhasil {text}")
 
 
-@PY.INLINE("pm_pr")
+@WANN.INLINE("pm_pr")
 async def _(client, inline_query):
     get_id = inline_query.query.split()
     m = [obj for obj in get_objects() if id(obj) == int(get_id[1])][0]
@@ -195,9 +195,9 @@ async def _(client, inline_query):
     )
 
 
-@PY.UBOT("ok|terima")
-@PY.TOP_CMD
-@PY.PRIVATE
+@WANN.UBOT("ok|terima")
+@WANN.TOP_CMD
+@WANN.PRIVATE
 async def _(client, message):
     ggl = await EMO.GAGAL(client)
     brhsl = await EMO.BERHASIL(client)
@@ -211,9 +211,9 @@ async def _(client, message):
         return await message.reply(f"{brhsl}{rpk} sudah diterima")
 
 
-@PY.UBOT("no|tolak")
-@PY.TOP_CMD
-@PY.PRIVATE
+@WANN.UBOT("no|tolak")
+@WANN.TOP_CMD
+@WANN.PRIVATE
 async def _(client, message):
     ggl = await EMO.GAGAL(client)
     user = message.chat
@@ -254,8 +254,8 @@ async def send_log(client, chat_id, message, message_text, msg):
     except Exception as error:
         print(f"{msg} ERROR: GAGAL MENERUSKAN PESAN")
 
-@PY.UBOT("logs")
-@PY.TOP_CMD
+@WANN.UBOT("logs")
+@WANN.TOP_CMD
 async def _(client, message):
     brhsl = await EMO.BERHASIL(client)
     ggl = await EMO.GAGAL(client)
@@ -278,7 +278,7 @@ async def _(client, message):
     )
 
 
-@PY.NO_CMD_UBOT("LOGS_GROUP", ubot)
+@WANN.NO_CMD_UBOT("LOGS_GROUP", ubot)
 async def _(client, message):
     on_logs = await get_vars(client.me.id, "ON_LOGS")
     if on_logs:
