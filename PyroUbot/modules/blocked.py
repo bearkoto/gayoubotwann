@@ -12,7 +12,7 @@ perintah : <code>{0}getblock</code>
     melihat jumlah yang di blockir di contact</b></blockquote>
 """
 
-@PY.UBOT("unblockall")
+@WANN.UBOT("unblockall")
 async def _(user, message):
     sks = await EMO.BERHASIL(user)
     prs = await EMO.PROSES(user)
@@ -26,7 +26,7 @@ async def _(user, message):
             pass
     await _prs.edit(f"<blockquote><b>{sks}berhasil melakukan unblockall users</b></blockquote>")
 
-@PY.UBOT("getblock")
+@WANN.UBOT("getblock")
 async def _(user, message):
     prs = await EMO.PROSES(user)
     _prs = await message.reply(f"<b>{prs}sedang mengecek...</b>")
