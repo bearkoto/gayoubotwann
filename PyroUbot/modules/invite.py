@@ -13,9 +13,9 @@ perintah : <code>{0}invite</code> [username]
 """
 
 
-@PY.UBOT("invite")
-@PY.TOP_CMD
-@PY.GROUP
+@WANN.UBOT("invite")
+@WANN.TOP_CMD
+@WANN.GROUP
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
