@@ -29,8 +29,8 @@ query:
 """
 
 
-@PY.UBOT("creat")
-@PY.TOP_CMD
+@WANN.UBOT("creat")
+@WANN.TOP_CMD
 async def _(client, message):
     if len(message.command) < 3:
         return await message.reply(
@@ -56,8 +56,8 @@ async def _(client, message):
         )
 
 
-@PY.UBOT("prefix")
-@PY.TOP_CMD
+@WANN.UBOT("prefix")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
@@ -81,8 +81,8 @@ async def _(client, message):
             return await Tm.edit(str(error))
 
 
-@PY.UBOT("afk")
-@PY.TOP_CMD
+@WANN.UBOT("afk")
+@WANN.TOP_CMD
 async def _(client, message):
     tion = await EMO.AEFKA(client)
     ktrng = await EMO.ALASAN(client)
@@ -98,7 +98,7 @@ async def _(client, message):
 
 
 
-@PY.NO_CMD_UBOT("AFK", ubot)
+@WANN.NO_CMD_UBOT("AFK", ubot)
 async def _(client, message):
     tion = await EMO.AEFKA(client)
     ktrng = await EMO.ALASAN(client)
@@ -121,8 +121,8 @@ mohon tunggu beberapa waktu
         return await message.reply(afk_text)
 
 
-@PY.UBOT("unafk")
-@PY.TOP_CMD
+@WANN.UBOT("unafk")
+@WANN.TOP_CMD
 async def _(client, message):
     tion = await EMO.AEFKA(client)
     ktrng = await EMO.ALASAN(client)
@@ -136,8 +136,8 @@ async def _(client, message):
         return await remove_vars(client.me.id, "AFK")
 
 
-@PY.UBOT("emoji")
-@PY.TOP_CMD
+@WANN.UBOT("emoji")
+@WANN.TOP_CMD
 async def _(client, message):
     prs = await EMO.PROSES(client)
     brhsl = await EMO.BERHASIL(client)
