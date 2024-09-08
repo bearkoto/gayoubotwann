@@ -23,8 +23,8 @@ perintah : <code>{0}setlang</code>
 """
 
 
-@PY.UBOT("tts")
-@PY.TOP_CMD
+@WANN.UBOT("tts")
+@WANN.TOP_CMD
 async def _(client, message):
     TM = await message.reply("<blockquote><b>silahkan tunggu</b></blockquote>")
     if message.reply_to_message:
@@ -54,8 +54,8 @@ async def _(client, message):
         pass
 
 
-@PY.UBOT("tr")
-@PY.TOP_CMD
+@WANN.UBOT("tr")
+@WANN.TOP_CMD
 async def _(client, message):
     trans = Translator()
     TM = await message.reply("<blockquote><b>silahkan tunggu</b></blockquote>")
@@ -77,8 +77,8 @@ async def _(client, message):
     await client.send_message(message.chat.id, reply, reply_to_message_id=rep.id)
 
 
-@PY.UBOT("setlang")
-@PY.TOP_CMD
+@WANN.UBOT("setlang")
+@WANN.TOP_CMD
 async def _(client, message):
     query = id(message)
     try:
@@ -88,7 +88,7 @@ async def _(client, message):
         return await message.reply(error)
 
 
-@PY.INLINE("^ubah_bahasa")
+@WANN.INLINE("^ubah_bahasa")
 async def _(client, inline_query):
     buttons = InlineKeyboard(row_width=3)
     keyboard = []
@@ -117,7 +117,7 @@ async def _(client, inline_query):
     )
 
 
-@PY.CALLBACK("^set_bahasa")
+@WANN.CALLBACK("^set_bahasa")
 async def _(client, callback_query):
     data = callback_query.data.split()
     try:
