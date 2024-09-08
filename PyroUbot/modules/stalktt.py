@@ -12,7 +12,7 @@ __HELP__ = """
    <i>penjelasan:</b> untuk stalk tiktok menggunakan username</i></blockquote>
 """
 
-@PY.UBOT("stalktt")
+@WANN.UBOT("stalktt")
 async def stalktt(client, message):
     ggl = await EMO.GAGAL(client)
     sks = await EMO.BERHASIL(client)
