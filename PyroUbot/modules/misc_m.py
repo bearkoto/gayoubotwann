@@ -237,8 +237,8 @@ async def _(client, message):
     await AM.edit(f"data qrcode:\n{qr_contents}")
 
 
-@WANN.UBOT("tg")
-@WANN.TOP_CMD
+#@WANN.UBOT("tg")
+#@WANN.TOP_CMD
 async def _(client, message):
     XD = await message.reply("sedang memproses . . .")
     if not message.reply_to_message:
