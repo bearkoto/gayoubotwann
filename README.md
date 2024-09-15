@@ -45,7 +45,7 @@ screen -S gayoubotwann
 bash installnode.sh
 ```
 ```
-apt install python3-pip
+apt install python3-pip -y
 ```
 ```
 pip3 install -r requirements.txt
@@ -57,5 +57,5 @@ cp sample.env .env
 nano .env
 ```
 ```
-bash start.sh
+bash start
 ```
