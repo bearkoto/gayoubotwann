@@ -42,19 +42,10 @@ cd gayoubotwann
 screen -S gayoubotwann
 ```
 ```
-bash installnode.sh
+bash installmodule.sh
 ```
 ```
-apt install python3-pip -y
-```
-```
-pip3 install -r requirements.txt
-```
-```
-cp sample.env .env
-```
-```
-nano .env
+cp sample.env .env && nano .env
 ```
 ```
 bash start
