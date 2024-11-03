@@ -5,11 +5,11 @@ from pyrogram.types import *
 from PyroUbot import *
 
 __MODULE__ = "ᴀᴅᴢᴀɴ"
-__HELP__ = f"""
-<blockquote><b>『 bantuan untuk ᴀᴅᴢᴀɴ 』</b>
+__HELP__ = """
+📚 <b>--Folder Untuk Adzan--</b>
 
-  <b>• perintah:</b> <code>.adzan</code> [nama kota]
-  <b>• penjelasan:</b> Untuk mengetahui waktu adzan.</blockquote>
+<blockquote><b>🚦 Perintah : <code>{0}adzan</code> [nama kota]
+🦠 Penjelasan : Untuk Mengetahui Waktu Adzan.</b></blockquote>
 """
 
 @WANN.UBOT("adzan")
