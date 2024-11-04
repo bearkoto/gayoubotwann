@@ -8,10 +8,10 @@ import glob
 
 __MODULE__ = "ᴄᴏᴜᴘʟᴇ"
 __HELP__ = """
-<blockquote><b>『 ᴄᴏᴜᴘʟᴇ 』</b>
+📚 <b>--Folder Untuk Coople--</b>
 
-  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}couple</code> <b>ᴊᴜᴍʟᴀʜ/ᴋᴀᴛᴀ_ᴋᴜɴᴄɪ</b> 
-   <i>penjelasan:</b> untuk mencari photo couple secara random</i></blockquote>
+<blockquote><b>🚦 Perintah : <code>{0}couple</code> ᴊᴜᴍʟᴀʜ/ᴋᴀᴛᴀ_ᴋᴜɴᴄɪ
+🦠 Penjelasan : Untuk Mencari Photo Couple Secara Random.</b></blockquote>
 """
 
 @WANN.UBOT("couple")
@@ -20,13 +20,13 @@ async def pinterest(client, message):
     err = await EMO.GAGAL(client)
     jalan = await message.reply(f"{prs}<b>ᴘʀᴏᴄᴇssɪɴɢ...</b>")
     chat_id = message.chat.id
-    url = "https://api.botcahx.eu.org/api/randomgambar/couplepp?apikey=ApiKhususWannAza"
+    url = "https://widipe.com/ppcp"
     response = requests.get(url)
 
     if response.status_code == 200:
         data = response.json()
-        male_url = data['result']['male']
-        female_url = data['result']['female']
+        male_url = data['male']
+        female_url = data['female']
 
         # Download images using wget
         male_image_filename = wget.download(male_url, out="male.jpg")
