@@ -8,39 +8,37 @@ from io import BytesIO
 
 __MODULE__ = "ᴄᴇᴄᴀɴ"
 __HELP__ = """
-<blockquote><b>『 ʙᴀɴᴛᴜᴀɴ ᴄᴇᴄᴀɴ 』</b>
+📚 <b>--Folder Untuk Cecan--</b>
 
-<b>⌲ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}cecan [query]</code>
-
-<b>Query:</b> <b>Indonesia</b>,
-    <b>china</b>,
-    <b>thailand</b>,
-    <b>vietnam</b>,
-    <b>hijaber</b>,
-    <b>rose</b>,
-    <b>ryujin</b>,
-    <b>jiso</b>,
-    <b>jeni</b>,
-    <b>justinaxie</b>,
-    <b>malaysia</b>,
-    <b>japan</b>,
-    <b>korea</b></blockquote>
+<blockquote><b>🚦 Perintah : <code>{0}cecan [query]</code>
+🦠 Penjelasan : Mengirim Foto Random Sesuai Query.</b></blockquote>
+<blockquote><b>📖 Penggunaan : 
+ Query: 
+    Indonesia,
+    china,
+    thailand,
+    vietnam,
+    waifu,
+    neko,
+    shinobu,
+    hubble,
+    malaysia,
+    japan,
+    korea</b></blockquote>
 """
 
 URLS = {
-    "indonesia": "https://api.botcahx.eu.org/api/cecan/indonesia?apikey=ApiKhususWannAza",
-    "china": "https://api.botcahx.eu.org/api/cecan/china?apikey=ApiKhususWannAza",
-    "thailand": "https://api.botcahx.eu.org/api/cecan/thailand?apikey=ApiKhususWannAza",
-    "vietnam": "https://api.botcahx.eu.org/api/cecan/vietnam?apikey=ApiKhususWannAza",
-    "hijaber": "https://api.botcahx.eu.org/api/cecan/hijaber?apikey=ApiKhususWannAza",
-    "rose": "https://api.botcahx.eu.org/api/cecan/rose?apikey=ApiKhususWannAza",
-    "ryujin": "https://api.botcahx.eu.org/api/cecan/ryujin?apikey=ApiKhususWannAza",
-    "jiso": "https://api.botcahx.eu.org/api/cecan/jiso?apikey=ApiKhususWannAza",
-    "jeni": "https://api.botcahx.eu.org/api/cecan/jeni?apikey=ApiKhususWannAza",
-    "justinaxie": "https://api.botcahx.eu.org/api/cecan/justinaxie?apikey=ApiKhususWannAza",
-    "malaysia": "https://api.botcahx.eu.org/api/cecan/malaysia?apikey=ApiKhususWannAza",
-    "japan": "https://api.botcahx.eu.org/api/cecan/japan?apikey=ApiKhususWannAza",
-    "korea": "https://api.botcahx.eu.org/api/cecan/korea?apikey=ApiKhususWannAza"
+    "indonesia": "https://widipe.com/indonesia",
+    "china": "https://widipe.com/china",
+    "thailand": "https://widipe.com/thailand",
+    "vietnam": "https://widipe.com/vietnam",
+    "waifu": "https://widipe.com/waifu",
+    "neko": "https://widipe.com/neko",
+    "shinobu": "https://widipe.com/shinobu",
+    "hubble": "https://widipe.com/hubbleimg",
+    "malaysia": "https://widipe.com/malaysia",
+    "japan": "https://widipe.com/japan",
+    "korea": "https://widipe.com/korea"
 }
 
 @WANN.UBOT("cecan")
