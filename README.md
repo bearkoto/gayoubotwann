@@ -36,7 +36,10 @@ apt install ffmpeg -y
 git clone https://token_github@github.com/wndrzzka/gayoubotwann && cd gayoubotwann 
 ```
 ```
-screen -S gayoubotwann && bash installmodule.sh
+screen -S gayoubotwann
+```
+```
+bash installmodule.sh
 ```
 ```
 cp sample.env .env && nano .env
