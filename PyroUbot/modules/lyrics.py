@@ -25,7 +25,7 @@ async def lyrics(client, message):
     
     lyrics = message.command[1]
     chat_id = message.chat.id
-    url = f"https://widipe.com/lirik?text={lyrics}"
+    url = f"https://aemt.uk.to/lirik?text={lyrics}"
     
     try:
         response = requests.get(url)
