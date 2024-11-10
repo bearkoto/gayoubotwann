@@ -27,7 +27,7 @@ async def chat_gpt(client, message):
         else:
             prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>proccesing....")
             a = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://widipe.com/openai?text={a}')
+            response = requests.get(f'https://aemt.uk.to/openai?text={a}')
 
             try:
                 if "result" in response.json():
