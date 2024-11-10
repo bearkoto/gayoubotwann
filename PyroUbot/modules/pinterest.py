@@ -26,7 +26,7 @@ async def pin(client, message):
     
     a = message.text.split(' ', 1)[1]
     chat_id = message.chat.id
-    url = f"https://widipe.com/pinterest?query={a}"
+    url = f"https://aemt.uk.to/pinterest?query={a}"
     
     try:
         response = requests.get(url)
