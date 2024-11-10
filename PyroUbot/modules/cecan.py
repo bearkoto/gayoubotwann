@@ -28,17 +28,17 @@ __HELP__ = """
 """
 
 URLS = {
-    "indonesia": "https://widipe.com/indonesia",
-    "china": "https://widipe.com/china",
-    "thailand": "https://widipe.com/thailand",
-    "vietnam": "https://widipe.com/vietnam",
-    "waifu": "https://widipe.com/waifu",
-    "neko": "https://widipe.com/neko",
-    "shinobu": "https://widipe.com/shinobu",
-    "hubble": "https://widipe.com/hubbleimg",
-    "malaysia": "https://widipe.com/malaysia",
-    "japan": "https://widipe.com/japan",
-    "korea": "https://widipe.com/korea"
+    "indonesia": "https://aemt.uk.to/indonesia",
+    "china": "https://aemt.uk.to/china",
+    "thailand": "https://aemt.uk.to/thailand",
+    "vietnam": "https://aemt.uk.to/vietnam",
+    "waifu": "https://aemt.uk.to/waifu",
+    "neko": "https://aemt.uk.to/neko",
+    "shinobu": "https://aemt.uk.to/shinobu",
+    "hubble": "https://aemt.uk.to/hubbleimg",
+    "malaysia": "https://aemt.uk.to/malaysia",
+    "japan": "https://aemt.uk.to/japan",
+    "korea": "https://aemt.uk.to/korea"
 }
 
 @WANN.UBOT("cecan")
