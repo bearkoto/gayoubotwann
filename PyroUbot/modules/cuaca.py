@@ -21,7 +21,7 @@ async def cuaca(client, message):
     jalan = await message.reply(f"{prs} Processing...")
     a = message.text.split(' ', 1)[1]
     chat_id = message.chat.id
-    url = f"https://widipe.com/weather?text={a}"
+    url = f"https://aemt.uk.to/weather?text={a}"
     
     try:
         response = requests.get(url)
