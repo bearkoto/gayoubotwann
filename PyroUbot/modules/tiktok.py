@@ -24,7 +24,7 @@ async def download_file(url, path):
                 print(f"Failed to download file: {response.status}")
 
 async def downloader_tiktok(client, message, perintah,tujuan):
-    url = f"https://widipe.com/download/tiktokdl?url={tujuan}"
+    url = f"https://aemt.uk.to/download/tiktokdl?url={tujuan}"
     headers = {"accept": "application/json"}
     res = requests.get(url, headers=headers)
     if res.status_code == 200:
