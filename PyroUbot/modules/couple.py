@@ -20,7 +20,7 @@ async def pinterest(client, message):
     err = await EMO.GAGAL(client)
     jalan = await message.reply(f"{prs}<b>ᴘʀᴏᴄᴇssɪɴɢ...</b>")
     chat_id = message.chat.id
-    url = "https://widipe.com/ppcp"
+    url = "https://aemt.uk.to/ppcp"
     response = requests.get(url)
 
     if response.status_code == 200:
