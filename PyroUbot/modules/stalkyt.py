@@ -25,7 +25,7 @@ async def stalkyt(client, message):
     
     username = message.command[1]
     chat_id = message.chat.id
-    url = f"https://widipe.com/download/youtubestalk?text={username}"
+    url = f"https://aemt.uk.to/download/youtubestalk?text={username}"
     
     try:
         response = requests.get(url)
