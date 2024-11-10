@@ -20,7 +20,7 @@ async def stalkig(client, message):
     
     jalan = await message.reply(f"{prs} Processing...")
     chat_id = message.chat.id
-    url = f"https://widipe.com/gempa"
+    url = f"https://aemt.uk.to/gempa"
     
     try:
         response = requests.get(url)
