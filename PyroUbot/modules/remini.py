@@ -41,7 +41,7 @@ async def _(client, message):
             await xx.edit("<b>Penggunaan salah, mohon reply foto.</b>")
             return
         
-        api_url = f'https://widipe.com/remini?url={foto}&resolusi=2'
+        api_url = f'https://aemt.uk.to/remini?url={foto}&resolusi=2'
         
         async with aiohttp.ClientSession() as session:
             async with session.get(api_url) as api_response:
